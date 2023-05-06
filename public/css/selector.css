@@ -1,0 +1,155 @@
+/* :root {
+  background: purple;
+}
+
+html {
+  max-width: 720px;
+}
+
+body {
+  background: #fff;
+}
+
+* {
+  color: red;
+}
+
+h1 {
+  color: green;
+}
+
+.box {
+  background: #918d8d;
+}
+
+#user, 
+.user {
+  color: blue;
+}
+
+h1.button {
+  background: red;
+  color: black;
+}
+
+h1,
+h2#user,
+button.button {
+  color: green;
+}
+
+div > p {
+  color: rgb(22, 109, 109); 
+}
+
+footer > .user {
+  color:palevioletred;
+}
+
+footer > h1 {
+  color: palevioletred;
+}
+
+footer em.child,
+footer div.child {
+  color: palevioletred;
+}
+
+.p-top {
+  background: black;
+}
+
+h1 ~ p, 
+h1 ~ * > p {
+  background: black;
+} */
+
+.card-dark {
+  background: #e6dede;
+}
+
+.item:first-child {
+  color: green;
+}
+
+.item:last-child {
+  color: green;
+}
+
+.item:last-of-type {
+  color: blue;
+}
+
+.item:only-of-type {
+  color: red;
+}
+
+.item:nth-last-child(2n) {
+  color: #dabc14;
+}
+
+p:not(.item) {
+  color: #15a5af;
+}
+
+p:empty {
+  height: 10px;
+  background: red;
+}
+
+.input-dark[required] {
+  background: #ca5656;
+}
+
+.input-dark[type="number"] {
+  background: #40ad71;
+}
+
+.small-img[alt~="small"] {
+   height: 500px;
+}
+
+a[rel~="external"] {
+  color: green;
+}
+
+/* інший варіант */
+.card[class~="img"] {
+  height: 720px;
+}
+
+button[class|="btn"] {
+  background: rgb(167, 164, 164);
+}
+
+a[class^="btn"] {
+  background: rgb(105, 59, 59);
+}
+/* універсальний варіант, який буде обирати клас btn, де б він не був розташований */
+a[class*="btn"] {
+  background: rgb(105, 59, 59);
+} 
+
+a[class*="big"] {
+  background: rgb(99, 13, 211);
+}
+
+.btn::first-letter {
+  color: red;
+}
+
+.big-text::first-line {
+  color: red;
+}
+
+.input-dark::placeholder {
+  color: green;
+  background: pink;
+}
+
+.big-text::before,
+.big-text::after {
+  content: "$$$";
+  color: green;
+}
+

@@ -1,7 +1,87 @@
-html {
-  max-width: 720px;
+
+.card {
+    color: #6C82CF;
 }
 
-body {
-  background: #fff;
+.card p {
+    color: green;
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke: 1px blue;
+} 
+
+p:focus,
+p:active,
+p:hover {
+    -webkit-text-fill-color: red;
+    -webkit-text-stroke: 1px blue; 
+
+    direction: rtl;
+}
+
+/* #test {
+    color: initial;
+    -webkit-text-fill-color: initial;
+    -webkit-text-stroke: initial; 
+}  */
+
+#test {
+    color: inherit;
+    -webkit-text-fill-color: inherit;
+    -webkit-text-stroke: inherit; 
+
+    /* writing-mode: vertical-rl; */
+    /* writing-mode: vertical-lr; */
+    /* text-align: right; */
+    /* text-align: center; */
+    /* text-align: left; */
+    text-align: justify;
+
+    letter-spacing: 0.02em;
+}
+
+span {
+    text-align: left;
+    text-transform: capitalize;
+    text-transform: lowercase;
+    text-transform: uppercase;
+
+    /* text-decoration-color: blue;  */
+    text-decoration: underline solid red;
+    /* text-decoration-line: line-through;
+    text-decoration-style: solid; */
+}
+
+span :hover {
+    text-decoration-line: line-through; 
+    text-decoration-style: wavy;
+}
+
+pre {
+    tab-size: 4;  
+}
+
+* {
+ font-family: "Roboto", sans-serif;   
+ font-size: 18px;
+ font-weight: 900;
+ font-style: italic;
+ font-display: swap;
+}
+
+span {
+    font-size: xx-large;
+    font-weight: lighter;
+    font-style: oblique;
+}
+
+.test {
+    display: none;
+}
+
+.block {
+    display: block;
+    background: rgb(202, 196, 196);
+    margin: auto;
+
+    width: fit-content; 
 }
