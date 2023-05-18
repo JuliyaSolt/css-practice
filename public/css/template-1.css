@@ -1,3 +1,7 @@
+:root {
+    --text-color: #212529;
+}
+
 .page {
     background: #FFFFFF; 
     padding: 0 15px; 
@@ -35,7 +39,8 @@
 
 .nav_link:hover {
    text-decoration: underline;
-   color: blue;  
+   color: blue; 
+   opacity: 50%; 
 }
 
 .nav_vertical .nav_link {
@@ -155,13 +160,14 @@
 .card {
     border: 1px solid red;
     border-radius: 15px;
-    box-shadow: 5px 5px 10px 1px purple;  
+    box-shadow: 5px 5px 10px 1px rgb(243, 193, 27);  
 }
 
 .card:hover {
     outline: 2px solid blue;
     outline-offset: 5px;
     cursor: pointer;
+    opacity: 0,5%;
 }
 
 .btn {
@@ -169,9 +175,97 @@
 }
 
 h1 {
-    text-shadow: 0px 0px 10px purple;
+    text-shadow: 0px 0px 10px rgb(233, 174, 13);
 }
 
-.plans_card:nth-child(2) .card {
-    
+.plans_card:nth-child(2) .card {   
 }
+
+.page {
+    /* background-image: url('/img/test2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed; */
+} 
+
+.hero_text {
+    /* background-image: url('/img/test2.jpg');
+    border: 20px solid transparent; */
+    padding: 40px;
+    /* color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text; */
+    color: green;
+    /* background-origin: border-box; */
+    /* background-origin: padding-box; */
+    /* background-origin: content-box; */
+    border-image-source: url('/img/test2.jpg');
+    border-image-width: 10%;
+    border-image-slice: 10%;
+    border-image-repeat: stretch;
+    border-image-outset: 70px;
+}
+
+.card_block {
+    /* list-style-type: circle;
+    list-style-type: disc; */
+    /* list-style-type: square; */
+    /* list-style-type: decimal; */
+    /* list-style-type: decimal-leading-zero;
+    list-style-type: lower-alpha;
+    list-style-type: upper-alpha;
+    list-style-type: upper-roman; */
+    list-style-position: inside;
+    
+    list-style-image: linear-gradient(to bottom left, 
+    blue,
+    yellow
+    );
+
+    padding: 0;
+}
+
+.card_description_item {
+    display: list-item;
+}
+
+.table tr {
+    border: 1px solid black;
+}
+
+.table tr td {
+    border: 1px solid black;
+    border-bottom-color: red;
+    border-right-color: blue;
+}
+
+.table {
+    table-layout: auto;
+    border-collapse: collapse;
+    caption-side: top;
+    /* empty-cells: hide; */
+}
+
+ .nav_link::before,
+ .nav_link::after {
+    content: '';
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: yellow;
+ }
+
+ .nav_link::before {
+    margin-right: 15px;
+ }
+
+ .nav_link::after {
+    margin-left: 15px;
+ }
+
+ .calc {
+    width: 600px;
+
+    margin: 0;  
+ }
